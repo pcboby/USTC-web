@@ -1,0 +1,121 @@
+.menu {
+  ul {
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        display: block;
+        line-height: 20px;
+        color: rgba($color: #fff, $alpha: .7);
+        padding: 7px;
+        i {
+          display: block;
+          margin: 0 auto;
+          width: 36px;
+          height: 36px;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      &.selected {
+        a {
+          color: #00ffff;
+        }
+      }
+      &:hover,
+      &.selected {
+        &::after {
+          content: "";
+          display: block;
+          height: 5px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: url(../images/menu-line.png);
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+.menu-sub {
+  ul {
+    li {
+      display: block;
+      position: relative;
+      width: 70px;
+      a {
+        display: block;
+        line-height: 1em;
+        color: rgba($color: #fff, $alpha: .7);
+        padding: 7px;
+        i {
+          display: block;
+          margin: 0 auto;
+          width: 36px;
+          height: 36px;
+        }
+        span {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+      &:hover,
+      &.selected {
+        a {
+          color: #00ffff;
+        }
+      }
+      &.selected {
+      }
+    }
+  }
+}
+
+.menu-quick {
+  ul {
+    li {
+      display: block;
+      position: relative;
+      width: 56px;
+      height: 56px;
+      border: 2px solid #018ec1;
+      border-radius: 100% 100%;
+      margin-left: 12px;
+      margin-top: 10px;
+      a {
+        display: block;
+        line-height: 1em;
+        color: rgba($color: #fff, $alpha: .7);
+        padding: 4px;
+        i {
+          display: block;
+          margin: 0 auto;
+          width: 34px;
+          height: 28px;
+          line-height: 28px;
+          font-size: 22px;
+          text-align: center;
+        }
+        span {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+      &:hover,
+      &.selected {
+        a {
+          color: #00ffff;
+        }
+      }
+      &.selected {
+      }
+    }
+  }
+}

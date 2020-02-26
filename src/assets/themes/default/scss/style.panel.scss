@@ -1,0 +1,31 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2px;
+  background-color: #034fa2;
+  .panel-header {
+    flex: none;
+    background-color: #034fa2;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .panel-container {
+    flex: 1;
+    background-color: #014086;
+    overflow: auto;
+  }
+  .panel-footer {
+    flex: none;
+  }
+}
+
+.panel-card {
+  .panel-card-header {
+  }
+  .panel-card-container {
+  }
+  .panel-card-footer {
+  }
+}

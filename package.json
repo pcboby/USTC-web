@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run dev",
+    "dev": "ng serve --port 8008 --open",
+    "prod": "npm run build:prod && npm run httpServer",
+    "build:prod": "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --prod --build--optimizer --configuration=production",
+    "build:sit": "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --prod --build--optimizer --configuration=sit",
+    "httpServer": "http-server dist/pre-three-dimensional/ -c-1",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -19,8 +23,16 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "classlist.js": "^1.1.20150312",
+    "font-awesome": "^4.7.0",
+    "http-server": "^0.12.1",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "ng-zorro-antd": "^8.5.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {

@@ -1,0 +1,10 @@
+<div class="menu-quick">
+  <ul>
+    <li *ngFor="let item of dataset">
+      <a>
+        <i [ngClass]="item.iconCls"></i>
+        <span>{{item.title}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

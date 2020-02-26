@@ -1,0 +1,54 @@
+<div class="layout">
+  <div class="layout-container">
+    <div class="container" style="padding: 10px 0;">
+      <div *ngIf="sub === 'dashboard'" class="container-silder" style="padding-left: 10px;">
+        <div class="layout">
+          <div class="layout-container">
+            11
+          </div>
+          <div class="layout-footer">
+            12
+          </div>
+        </div>
+      </div>
+      <div *ngIf="sub !== 'dashboard'" class="container-silder">
+        <div class="layout">
+          <div class="layout-container">
+            <app-menu-sub></app-menu-sub>
+          </div>
+          <div class="layout-footer">
+            <app-menu-quick></app-menu-quick>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="sub !== 'dashboard'" class="container-silder" style="padding-left: 10px; width: 268px;">
+        <app-panel>
+          2
+        </app-panel>
+      </div>
+      <div class="container-wraper" style="padding: 0 10px;">
+        <p>3</p>
+        <p>sub:{{ sub }}</p>
+      </div>
+      <div *ngIf="sub === 'dashboard'" class="container-silder" style="padding-right: 10px;">
+        <div class="layout">
+          <div class="layout-container">
+            21
+          </div>
+          <div class="layout-footer">
+            22
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="sub === 'dashboard'" class="layout-footer" style="padding:0 10px 10px 10px;">
+    <div class="container">
+      <div class="container-wraper">31</div>
+      <div class="container-wraper">32</div>
+    </div>
+  </div>
+</div>
+<div class="map-control" style="position: fixed; bottom:0; right:0;width: 120px;">
+  <nz-slider [(ngModel)]="value" [nzDisabled]="disabled"></nz-slider>
+</div>

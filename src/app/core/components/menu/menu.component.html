@@ -1,0 +1,10 @@
+<div class="menu">
+  <ul>
+    <li *ngFor="let item of dataset" [ngClass]="{'selected': isSelected(item.link)}">
+      <a (click)="go(item.link)">
+        <i></i>
+        <span>{{item.title}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    height: 70px;
+    background-image: url(../images/bg-header.png);
+    .header-l{
+        flex: none;
+        width: 600px;
+        background-image: url(../images/bg-header-l.png);
+        padding: 11px;
+    }
+    .header-c{
+        flex: 1;
+    }
+    .header-r{
+        flex: none;
+        width: 320px;
+        background-image: url(../images/bg-header-r.png);
+    }
+}
+
+.header-mini {
+    height: 100px;
+    padding: 26px;
+    background-image: url(../images/bg-cloud.png);
+}
+
+
+.logo {
+    width: 476px;
+    height: 48px;
+    background-image: url(../images/logo.png);
+  }

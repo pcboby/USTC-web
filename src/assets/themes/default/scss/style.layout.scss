@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #003a7a;
+  color: #fff;
+  .layout-header {
+    flex: none;
+  }
+  .layout-container {
+    flex: 1;
+    position: relative;
+    &.login {
+      background-image: url(../images/bg-login.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  .layout-footer {
+    flex: none;
+  }
+}

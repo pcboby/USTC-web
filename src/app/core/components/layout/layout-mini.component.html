@@ -1,0 +1,11 @@
+<div class="layout">
+  <div class="layout-header">
+    <app-header-mini></app-header-mini>
+  </div>
+  <div class="layout-container" [ngClass]="{'login': type === 'login'}">
+    <app-wraper></app-wraper>
+  </div>
+  <div class="layout-footer">
+    <app-footer-mini></app-footer-mini>
+  </div>
+</div>

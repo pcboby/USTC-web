@@ -1,0 +1,10 @@
+<div class="panel">
+  <div class="panel-header">
+    {{title}}
+  </div>
+  <div class="panel-container">
+    <ng-content></ng-content>
+  </div>
+  <div *ngIf="footer" class="panel-footer"></div>
+</div>
+
