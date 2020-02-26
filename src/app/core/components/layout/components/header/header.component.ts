@@ -1,4 +1,3 @@
-import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,14 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private route: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  go(url) {
-    this.route.navigate([url]);
-  }
 
 
 }

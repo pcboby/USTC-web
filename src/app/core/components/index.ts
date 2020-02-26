@@ -9,6 +9,7 @@ export * from './layout/components/silder/silder.component';
 export * from './layout/components/wraper/wraper.component';
 // menu
 export * from './menu/menu.component';
+export * from './menu/menu-control.component';
 export * from './menu/menu-sub.component';
 export * from './menu/menu-quick.component';
 // spinner

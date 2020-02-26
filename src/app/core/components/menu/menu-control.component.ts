@@ -1,18 +1,22 @@
-import { NavigationService } from './../../services/navigation.service';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { NavigationService } from '../../services';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  selector: 'app-menu-control',
+  templateUrl: './menu-control.component.html',
+  styleUrls: ['./menu-control.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuControlComponent implements OnInit {
+  dataset = [
+    {
+      title: '首页',
+      iconCls: 'fa fa-home',
+      link: '/map/dashboard'
+    }
+  ];
 
-  get dataset() {
-    return this.nav.menu;
-  }
-
+  
   get location() {
     return this.nav.getLocation();
   }
@@ -22,12 +26,12 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  go(url) {
-    this.route.navigate([url]);
-  }
 
   isSelected(link) {
     return link ? this.location.indexOf(link.split('?')[0]) > -1 : false;
   }
 
+  go(url) {
+    this.route.navigate([url]);
+  }
 }

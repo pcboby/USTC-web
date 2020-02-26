@@ -6,6 +6,13 @@
     <app-menu></app-menu>
   </div>
   <div class="header-r">
-    <a (click)="go('/')">首页</a>
+    <div class="container">
+      <div class="container-silder" style="padding-left: 40px;">
+        <app-menu-control></app-menu-control>
+      </div>
+      <div class="container-wraper" style="padding-right: 16px;">
+        <app-group-user></app-group-user>
+      </div>
+    </div>
   </div>
 </div>

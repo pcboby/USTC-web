@@ -1,3 +1,4 @@
+import { GroupUserComponent } from './controls/group-user/group-user.component';
 import { NavigationService } from './services/navigation.service';
 
 import { NgModule, Optional, SkipSelf } from '@angular/core';
@@ -18,10 +19,11 @@ import {
   FooterMiniComponent,
   LayoutComponent,
   LayoutMiniComponent,
-  MenuQuickComponent,
   PanelComponent,
   PanelCardComponent,
   MenuComponent,
+  MenuQuickComponent,
+  MenuControlComponent,
   MenuSubComponent
 } from './components';
 import { SpinnerService } from './services';
@@ -57,12 +59,16 @@ const components = [
   MenuComponent,
   MenuSubComponent,
   MenuQuickComponent,
+  MenuControlComponent,
   FooterComponent,
   FooterMiniComponent,
   LayoutComponent,
   LayoutMiniComponent,
   PanelComponent,
   PanelCardComponent
+];
+const controls = [
+  GroupUserComponent
 ];
 const directives = [];
 const pipes = [];
@@ -77,10 +83,10 @@ registerLocaleData(zh);
 
 @NgModule({
   imports: [...modules],
-  declarations: [...directives, ...components, ...pipes],
-  exports: [...directives, ...components, ...pipes],
+  declarations: [...directives, ...components, ...controls, ...pipes],
+  exports: [...directives, ...components, ...controls, ...pipes],
   providers: [...interceptors, ...services, ...apis, ...pipes],
-  entryComponents: [...components]
+  entryComponents: [...components, ...controls]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
