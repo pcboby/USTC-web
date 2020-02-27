@@ -5,7 +5,7 @@ import { MapComponent } from './map.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { AreasComponent, BuildingsComponent } from './components';
+import { AreasComponent, BuildingsComponent, SpacesComponent, PipelineComponent, PowerComponent } from './components';
 
 const modules = [
   CoreModule,
@@ -19,7 +19,10 @@ const modules = [
 const components = [
   MapComponent,
   AreasComponent,
-  BuildingsComponent
+  BuildingsComponent,
+  SpacesComponent,
+  PipelineComponent,
+  PowerComponent
 ];
 
 const services = [];

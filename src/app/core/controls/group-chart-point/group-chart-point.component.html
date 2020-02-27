@@ -1,0 +1,14 @@
+<div class="chart-point">
+  <ul *ngFor="let data of dataset" [title]="data.label">
+    <li *ngFor="let item of data.data">
+      <div class="chart-point-item">
+        <span class="chart-point-item-label">
+          {{item.label}}
+        </span>
+        <span class="chart-point-item-progress">
+          <span class="chart-point-item-progress-bar" [title]="item.value" [style.width]="prece(data.data, item.value)"></span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>

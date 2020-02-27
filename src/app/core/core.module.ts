@@ -29,7 +29,7 @@ import {
 } from './components';
 import { SpinnerService } from './services';
 import { TimingIntercepterService, BaseIntercepterService } from './interceptors';
-import { GroupTextComponent } from './controls';
+import { GroupTextComponent, GroupChartPointComponent } from './controls';
 
 const modules = [
   FormsModule,
@@ -72,7 +72,8 @@ const components = [
 ];
 const controls = [
   GroupUserComponent,
-  GroupTextComponent
+  GroupTextComponent,
+  GroupChartPointComponent
 ];
 const directives = [];
 const pipes = [];
