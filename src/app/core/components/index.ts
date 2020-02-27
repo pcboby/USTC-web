@@ -19,3 +19,4 @@ export * from './error/error.component';
 // panel
 export * from './panel/panel.component';
 export * from './panel/panel-card.component';
+export * from './panel/panel-box.component';

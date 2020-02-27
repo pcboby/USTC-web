@@ -1,0 +1,9 @@
+<div class="panel-box" [ngClass]="{'mini': type==='MINI'}">
+  <div class="panel-box-header">
+    {{title}}
+  </div>
+  <div class="panel-box-container">
+    <ng-content></ng-content>
+  </div>
+  <div class="panel-box-footer"></div>
+</div>

@@ -5,16 +5,37 @@ import { MapComponent } from './map.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { AreasComponent, BuildingsComponent } from './components';
+
+const modules = [
+  CoreModule,
+  CommonModule,
+  FormsModule,
+  ReactiveFormsModule,
+  NgZorroAntdModule,
+  MapRoutes
+];
+
+const components = [
+  MapComponent,
+  AreasComponent,
+  BuildingsComponent
+];
+
+const services = [];
 
 @NgModule({
   imports: [
-    FormsModule,
-    ReactiveFormsModule,
-    NgZorroAntdModule,
-    CoreModule,
-    CommonModule,
-    MapRoutes
+    ...modules
   ],
-  declarations: [MapComponent]
+  providers: [
+    ...services
+  ],
+  declarations: [
+    ...components
+  ],
+  entryComponents: [
+    ...components
+  ]
 })
 export class MapModule { }

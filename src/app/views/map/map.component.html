@@ -1,13 +1,21 @@
 <div class="layout">
   <div class="layout-container">
     <div class="container" style="padding: 10px 0;">
-      <div *ngIf="sub === 'dashboard'" class="container-silder" style="padding-left: 10px;">
+      <div
+        *ngIf="sub === 'dashboard'"
+        class="container-silder"
+        style="padding-left: 10px;"
+      >
         <div class="layout">
-          <div class="layout-container">
-            11
+          <div class="layout-container" style="padding-bottom: 10px;">
+            <app-panel-card title="校园面积" width="470">
+              11
+            </app-panel-card>
           </div>
           <div class="layout-footer">
-            12
+            <app-panel-card title="建筑数量" width="470">
+              <app-buildings></app-buildings>
+            </app-panel-card>
           </div>
         </div>
       </div>
@@ -21,34 +29,55 @@
           </div>
         </div>
       </div>
-      <div *ngIf="sub !== 'dashboard'" class="container-silder" style="padding-left: 10px; width: 268px;">
+      <div
+        *ngIf="sub !== 'dashboard'"
+        class="container-silder"
+        style="padding-left: 10px; width: 268px;"
+      >
         <app-panel>
           2
         </app-panel>
       </div>
       <div class="container-wraper" style="padding: 0 10px;">
-        <p>3</p>
-        <p>sub:{{ sub }}</p>
+        <app-panel-box>
+          <p>arkweb</p>
+          <p>sub:{{ sub }}</p>
+        </app-panel-box
+        >
       </div>
-      <div *ngIf="sub === 'dashboard'" class="container-silder" style="padding-right: 10px;">
-        <div class="layout">
-          <div class="layout-container">
-            21
-          </div>
-          <div class="layout-footer">
-            22
-          </div>
-        </div>
+      <div
+        *ngIf="sub === 'dashboard'"
+        class="container-silder"
+        style="padding-right: 10px;"
+      >
+        <app-panel-card type="RIGHT" title="建筑面积" width="470">
+          21
+        </app-panel-card>
       </div>
     </div>
   </div>
-  <div *ngIf="sub === 'dashboard'" class="layout-footer" style="padding:0 10px 10px 10px;">
+  <div
+    *ngIf="sub === 'dashboard'"
+    class="layout-footer"
+    style="padding:0 10px 10px 10px;"
+  >
     <div class="container">
-      <div class="container-wraper">31</div>
-      <div class="container-wraper">32</div>
+      <div class="container-wraper" style="padding-right: 5px;">
+        <app-panel-card>
+          31
+        </app-panel-card>
+      </div>
+      <div class="container-wraper" style="padding-left: 5px;">
+        <app-panel-card>
+          32
+        </app-panel-card>
+      </div>
     </div>
   </div>
 </div>
-<div class="map-control" style="position: fixed; bottom:0; right:0;width: 120px;">
+<div
+  class="map-control"
+  style="position: fixed; bottom:0; right:0;width: 120px;"
+>
   <nz-slider [(ngModel)]="value"></nz-slider>
 </div>

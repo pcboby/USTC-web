@@ -1,4 +1,59 @@
+// -----------------------------------------
 .group-user {
+  text-align: center;
+  line-height: 70px;
+}
+// -----------------------------------------
+.group-card {
+  margin: -5px;
+  ul {
+    li {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+  }
+}
+// -----------------------------------------
+.card-item {
+  line-height: 36px;
+  padding: 0 12px;
+  span {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .color {
+    margin: 0 12px;
+    font-size: 24px;
+    &.color-1 {
+      background: linear-gradient(to right, #ff4100, #ff9200);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &.color-2 {
+      background: linear-gradient(to right, #58a429, #e0ff47);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &.color-3 {
+      background: linear-gradient(to right, #54e3d6, #ffd8b7);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &.color-4 {
+      background: linear-gradient(to right, #3984eb, #f86aea);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+  .card {
+      vertical-align: top;
     text-align: center;
-    line-height: 70px;
+    line-height: 36px;
+    width: 26px;
+    height: 36px;
+    margin: 0 4px;
+    background-image: url(../images/item-txt-bg.png);
+  }
 }

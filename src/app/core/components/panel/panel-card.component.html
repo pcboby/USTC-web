@@ -1,7 +1,15 @@
-<div class="panel-card">
-  <div class="panel-card-header"></div>
+<div
+  class="panel-card"
+  [ngClass]="{ right: type === 'RIGHT' }"
+  [style.width.px]="width"
+>
+  <div class="panel-card-header">
+    <span> {{ title }}</span>
+  </div>
   <div class="panel-card-container">
-    <ng-content></ng-content>
+    <div class="scroll">
+      <ng-content></ng-content>
+    </div>
   </div>
   <div class="panel-card-footer"></div>
 </div>

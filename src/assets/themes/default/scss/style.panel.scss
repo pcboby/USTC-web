@@ -1,3 +1,4 @@
+// -----------------------------------------
 .panel {
   display: flex;
   flex-direction: column;
@@ -15,17 +16,255 @@
     flex: 1;
     background-color: #014086;
     overflow: auto;
+    padding: 10px;
   }
   .panel-footer {
     flex: none;
   }
 }
-
+// -----------------------------------------
 .panel-card {
+  min-width: 220px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   .panel-card-header {
+    flex: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    background-image: url(../images/panel-card-tc.png);
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 30px;
+      background-image: url(../images/panel-card-tl-1.png);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 30px;
+      background-image: url(../images/panel-card-tr-1.png);
+    }
+    span {
+      position: relative;
+      z-index: 1;
+    }
   }
   .panel-card-container {
+    flex: 1;
+    position: relative;
+    background-image: url(../images/panel-card-cc.png);
+    padding: 10px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 100%;
+      background-image: url(../images/panel-card-cl.png);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 100%;
+      background-image: url(../images/panel-card-cr.png);
+    }
+    .scroll{
+      position: relative;
+    }
   }
   .panel-card-footer {
+    position: relative;
+    flex: none;
+    height: 32px;
+    line-height: 32px;
+    background-image: url(../images/panel-card-bc.png);
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      background-image: url(../images/panel-card-bl-1.png);
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32px;
+      height: 32px;
+      background-image: url(../images/panel-card-br-1.png);
+    }
+  }
+  &.right {
+    .panel-card-header {
+      text-align: right;
+      &::before {
+        width: 16px;
+        height: 30px;
+        background-image: url(../images/panel-card-tl-2.png);
+      }
+      &::after {
+        width: 200px;
+        height: 30px;
+        background-image: url(../images/panel-card-tr-2.png);
+      }
+    }
+    .panel-card-container {
+    }
+    .panel-card-footer {
+    }
+  }
+}
+// -----------------------------------------
+.panel-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100px;
+  background-image: url(../images/panel-box-cc.png);
+  position: relative;
+  z-index: 1;
+  .panel-box-header {
+    min-height: 1px;
+    background-image: url(../images/panel-box-line.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    position: relative;
+    line-height: 30px;
+    padding: 0 20px;
+    flex: none;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 44px;
+      height: 44px;
+      background-image: url(../images/panel-box-tl-1.png);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 44px;
+      height: 44px;
+      background-image: url(../images/panel-box-tr-1.png);
+    }
+  }
+  .panel-box-container {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding: 10px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background-image: url(../images/panel-box-line.png);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background-image: url(../images/panel-box-line.png);
+    }
+  }
+  .panel-box-footer {
+    min-height: 1px;
+    background-image: url(../images/panel-box-line.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    position: relative;
+    flex: none;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 44px;
+      height: 44px;
+      background-image: url(../images/panel-box-bl-1.png);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 44px;
+      height: 44px;
+      background-image: url(../images/panel-box-br-1.png);
+    }
+  }
+
+  &.mini {
+    background-image: none;
+    background-color: rgba($color: #fff, $alpha: .1);
+    min-height: 40px;
+    .panel-box-header {
+      background-image: none;
+      min-height: 0;
+      &::before {
+        width: 11px;
+        height: 11px;
+        background-image: url(../images/panel-box-mini-1.png);
+      }
+      &::after {
+        width: 11px;
+        height: 11px;
+        background-image: url(../images/panel-box-mini-2.png);
+      }
+    }
+    .panel-box-container {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .panel-box-footer {
+      background-image: none;
+      min-height: 0;
+      &::before {
+        width: 11px;
+        height: 11px;
+        background-image: url(../images/panel-box-mini-4.png);
+      }
+      &::after {
+        width: 11px;
+        height: 11px;
+        background-image: url(../images/panel-box-mini-3.png);
+      }
+    }
   }
 }

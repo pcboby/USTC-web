@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-panel-card',
@@ -6,6 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./panel-card.component.css']
 })
 export class PanelCardComponent implements OnInit {
+
+  @Input()
+  title = 'panel-card';
+
+  @Input()
+  type = null; // null | 'RIGHT'
+
+  @Input()
+  width = null;
 
   constructor() { }
 

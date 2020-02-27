@@ -1,3 +1,4 @@
+import { PanelBoxComponent } from './components/panel/panel-box.component';
 import { GroupUserComponent } from './controls/group-user/group-user.component';
 import { NavigationService } from './services/navigation.service';
 
@@ -28,6 +29,7 @@ import {
 } from './components';
 import { SpinnerService } from './services';
 import { TimingIntercepterService, BaseIntercepterService } from './interceptors';
+import { GroupTextComponent } from './controls';
 
 const modules = [
   FormsModule,
@@ -65,10 +67,12 @@ const components = [
   LayoutComponent,
   LayoutMiniComponent,
   PanelComponent,
-  PanelCardComponent
+  PanelCardComponent,
+  PanelBoxComponent
 ];
 const controls = [
-  GroupUserComponent
+  GroupUserComponent,
+  GroupTextComponent
 ];
 const directives = [];
 const pipes = [];
