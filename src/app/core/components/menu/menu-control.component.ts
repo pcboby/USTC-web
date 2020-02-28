@@ -31,7 +31,7 @@ export class MenuControlComponent implements OnInit {
     return link ? this.location.indexOf(link.split('?')[0]) > -1 : false;
   }
 
-  go(url) {
-    this.route.navigate([url]);
+  go(item) {
+    this.route.navigate([item.link]);
   }
 }

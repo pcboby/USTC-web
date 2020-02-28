@@ -3,8 +3,21 @@
     <app-menu-sub></app-menu-sub>
   </div>
   <div class="container-wraper" style="padding: 0 10px;">
-    <app-panel>
-      3
+    <app-panel [title]="type">
+      <ng-container [ngSwitch]="type">
+        <ng-container *ngSwitchCase="'机构管理'">
+          <app-system-organ></app-system-organ>
+        </ng-container>
+        <ng-container *ngSwitchCase="'权限管理'">
+          <app-system-authority></app-system-authority>
+        </ng-container>
+        <ng-container *ngSwitchCase="'日志管理'">
+          <app-system-log></app-system-log>
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+          <app-error code="404"></app-error>
+        </ng-container>
+      </ng-container>
     </app-panel>
   </div>
 </div>

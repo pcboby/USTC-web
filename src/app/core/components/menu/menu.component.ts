@@ -22,8 +22,9 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  go(url) {
-    this.route.navigate([url]);
+  go(item) {
+    const e = item.data ? item.data[0] : item;
+    this.route.navigate([e.link], { queryParams: e.queryParams});
   }
 
   isSelected(link) {

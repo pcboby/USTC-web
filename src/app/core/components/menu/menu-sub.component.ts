@@ -1,4 +1,4 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../../services';
 
@@ -19,9 +19,18 @@ export class MenuSubComponent implements OnInit {
     return this.nav.getLocation();
   }
 
-  constructor(private nav: NavigationService, private activated: ActivatedRoute) {}
+  constructor(private nav: NavigationService, private route: Router, private activated: ActivatedRoute) {}
 
   ngOnInit() {}
+
+  go(item) {
+    const e = item.data ? item.data[0] : item;
+    this.route.navigate([e.link], { queryParams: e.queryParams});
+  }
+
+  isSelected(item) {
+    return item.queryParams ? item.queryParams.type === this.activated.snapshot.queryParams['type'] : false;
+  }
 
 
 }

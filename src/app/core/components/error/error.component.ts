@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -20,8 +20,11 @@ export class ErrorComponent implements OnInit {
     },
   }
 
+  @Input()
+  code = null;
+
   get errorCode() {
-    return this.activated.snapshot.params['code'];
+    return this.activated.snapshot.params['code'] || this.code;
   }
 
   constructor(private route: Router, private activated: ActivatedRoute) { }

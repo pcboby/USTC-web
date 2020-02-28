@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SystemComponent implements OnInit {
 
-  constructor() { }
+  get type() {
+    return this.activated.snapshot.queryParams['type'];
+  }
+
+  constructor(private activated: ActivatedRoute) { }
 
   ngOnInit() {
   }
