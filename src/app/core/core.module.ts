@@ -1,3 +1,4 @@
+import { NgxEchartsModule } from 'ngx-echarts';
 import { PanelBoxComponent } from './components/panel/panel-box.component';
 import { GroupUserComponent } from './controls/group-user/group-user.component';
 import { NavigationService } from './services/navigation.service';
@@ -36,9 +37,9 @@ const modules = [
   ReactiveFormsModule,
   RouterModule,
   CommonModule,
-  NgZorroAntdModule,
   HttpClientModule,
-  NgZorroAntdModule
+  NgZorroAntdModule,
+  NgxEchartsModule
 ];
 const interceptors = [
   {

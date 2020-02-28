@@ -6,6 +6,7 @@ import { CoreModule } from 'src/app/core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AreasComponent, BuildingsComponent, SpacesComponent, PipelineComponent, PowerComponent } from './components';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 const modules = [
   CoreModule,
@@ -13,6 +14,7 @@ const modules = [
   FormsModule,
   ReactiveFormsModule,
   NgZorroAntdModule,
+  NgxEchartsModule,
   MapRoutes
 ];
 

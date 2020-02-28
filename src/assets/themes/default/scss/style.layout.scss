@@ -9,7 +9,7 @@
   }
   .layout-container {
     flex: 1;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     &.login {
       background-image: url(../images/bg-login.png);
