@@ -17,6 +17,8 @@
           line-height: 36px;
           font-size: 24px;
           text-align: center;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
         span {
           display: block;
@@ -53,11 +55,15 @@
       display: block;
       position: relative;
       width: 70px;
+      height: 100px;
+      background-image: url(../images/bg-menu-sub.png);
+      margin-bottom: -20px;
       a {
         display: block;
         line-height: 1em;
         color: rgba($color: #fff, $alpha: 0.7);
         padding: 7px;
+        padding-top: 14px;
         i {
           display: block;
           margin: 0 auto;
@@ -66,6 +72,8 @@
           line-height: 36px;
           font-size: 24px;
           text-align: center;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
         span {
           display: block;
@@ -75,11 +83,12 @@
       }
       &:hover,
       &.selected {
+        background-image: url(../images/bg-menu-sub-selected.png);
+      }
+      &.selected {
         a {
           color: #00ffff;
         }
-      }
-      &.selected {
       }
     }
   }
@@ -174,5 +183,262 @@
       &.selected {
       }
     }
+  }
+}
+
+
+// -----------------------------------------
+.icon-menu-layer{
+  background-image: url(../images/icons/layer.png);
+  &.selected {
+    background-image: url(../images/icons/layer2.png);
+  }
+}
+.icon-menu-layer-vector{
+  background-image: url(../images/icons/layer-vector.png);
+  &.selected {
+    background-image: url(../images/icons/layer-vector2.png);
+  }
+}
+.icon-menu-layer-module{
+  background-image: url(../images/icons/layer-module.png);
+  &.selected {
+    background-image: url(../images/icons/layer-module2.png);
+  }
+}
+.icon-menu-layer-vadio{
+  background-image: url(../images/icons/layer-vadio.png);
+  &.selected {
+    background-image: url(../images/icons/layer-vadio2.png);
+  }
+}
+.icon-menu-layer-pipeline{
+  background-image: url(../images/icons/layer-pipeline.png);
+  &.selected {
+    background-image: url(../images/icons/layer-pipeline2.png);
+  }
+}
+.icon-menu-layer-image{
+  background-image: url(../images/icons/layer-image.png);
+  &.selected {
+    background-image: url(../images/icons/layer-image2.png);
+  }
+}
+// -------------------
+.icon-menu-control{
+  background-image: url(../images/icons/control.png);
+  &.selected {
+    background-image: url(../images/icons/control2.png);
+  }
+}
+.icon-menu-control-measure{
+  background-image: url(../images/icons/control-measure.png);
+  &.selected {
+    background-image: url(../images/icons/control-measure2.png);
+  }
+}
+.icon-menu-control-tagging{
+  background-image: url(../images/icons/control-tagging.png);
+  &.selected {
+    background-image: url(../images/icons/control-tagging2.png);
+  }
+}
+.icon-menu-control-location{
+  background-image: url(../images/icons/control-location.png);
+  &.selected {
+    background-image: url(../images/icons/control-location2.png);
+  }
+}
+// -------------------
+.icon-menu-pipeline{
+  background-image: url(../images/icons/pipeline.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline2.png);
+  }
+}
+.icon-menu-pipeline-click{
+  background-image: url(../images/icons/pipeline-click.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-click2.png);
+  }
+}
+.icon-menu-pipeline-size{
+  background-image: url(../images/icons/pipeline-size.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-size2.png);
+  }
+}
+.icon-menu-pipeline-material{
+  background-image: url(../images/icons/pipeline-material.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-material2.png);
+  }
+}
+.icon-menu-pipeline-appendages{
+  background-image: url(../images/icons/pipeline-appendages.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-appendages2.png);
+  }
+}
+.icon-menu-pipeline-combination{
+  background-image: url(../images/icons/pipeline-combination.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-combination2.png);
+  }
+}
+.icon-menu-pipeline-point{
+  background-image: url(../images/icons/pipeline-point.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-point2.png);
+  }
+}
+.icon-menu-pipeline-power{
+  background-image: url(../images/icons/pipeline-power.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-power2.png);
+  }
+}
+.icon-menu-pipeline-patrol{
+  background-image: url(../images/icons/pipeline-patrol.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-patrol2.png);
+  }
+}
+// -------------------
+.icon-menu-statistics{
+  background-image: url(../images/icons/statistics.png);
+  &.selected {
+    background-image: url(../images/icons/statistics2.png);
+  }
+}
+// -------------------
+.icon-menu-analysis{
+  background-image: url(../images/icons/analysis.png);
+  &.selected {
+    background-image: url(../images/icons/analysis2.png);
+  }
+}
+.icon-menu-analysis-cross{
+  background-image: url(../images/icons/analysis-cross.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-cross2.png);
+  }
+}
+.icon-menu-analysis-connected{
+  background-image: url(../images/icons/analysis-connected.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-connected2.png);
+  }
+}
+.icon-menu-analysis-excavation{
+  background-image: url(../images/icons/analysis-excavation.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-excavation2.png);
+  }
+}
+.icon-menu-analysis-healthy{
+  background-image: url(../images/icons/analysis-healthy.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-healthy2.png);
+  }
+}
+.icon-menu-analysis-horizontal{
+  background-image: url(../images/icons/analysis-horizontal.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-horizontal2.png);
+  }
+}
+.icon-menu-analysis-tube{
+  background-image: url(../images/icons/analysis-tube.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-tube2.png);
+  }
+}
+.icon-menu-analysis-vertical{
+  background-image: url(../images/icons/analysis-vertical.png);
+  &.selected {
+    background-image: url(../images/icons/analysis-vertical2.png);
+  }
+}
+// -------------------
+.icon-menu-house{
+  background-image: url(../images/icons/house.png);
+  &.selected {
+    background-image: url(../images/icons/house2.png);
+  }
+}
+.icon-menu-house-attrib{
+  background-image: url(../images/icons/house-attrib.png);
+  &.selected {
+    background-image: url(../images/icons/house-attrib2.png);
+  }
+}
+.icon-menu-house-information{
+  background-image: url(../images/icons/house-information.png);
+  &.selected {
+    background-image: url(../images/icons/house-information2.png);
+  }
+}
+.icon-menu-house-modify{
+  background-image: url(../images/icons/house-modify.png);
+  &.selected {
+    background-image: url(../images/icons/house-modify2.png);
+  }
+}
+// -------------------
+.icon-menu-energy{
+  background-image: url(../images/icons/energy.png);
+  &.selected {
+    background-image: url(../images/icons/energy2.png);
+  }
+}
+.icon-menu-energy-monitoring{
+  background-image: url(../images/icons/energy-monitoring.png);
+  &.selected {
+    background-image: url(../images/icons/energy-monitoring2.png);
+  }
+}
+.icon-menu-energy-map{
+  background-image: url(../images/icons/energy-map.png);
+  &.selected {
+    background-image: url(../images/icons/energy-map2.png);
+  }
+}
+// -------------------
+.icon-menu-print{
+  background-image: url(../images/icons/print.png);
+  &.selected {
+    background-image: url(../images/icons/print2.png);
+  }
+}
+.icon-menu-print-special{
+  background-image: url(../images/icons/print-special.png);
+  &.selected {
+    background-image: url(../images/icons/print-special2.png);
+  }
+}
+// -------------------
+.icon-menu-system{
+  background-image: url(../images/icons/system.png);
+  &.selected {
+    background-image: url(../images/icons/system2.png);
+  }
+}
+.icon-menu-system-mechanism{
+  background-image: url(../images/icons/system-mechanism.png);
+  &.selected {
+    background-image: url(../images/icons/system-mechanism2.png);
+  }
+}
+.icon-menu-system-authority{
+  background-image: url(../images/icons/system-authority.png);
+  &.selected {
+    background-image: url(../images/icons/system-authority2.png);
+  }
+}
+.icon-menu-system-log{
+  background-image: url(../images/icons/system-log.png);
+  &.selected {
+    background-image: url(../images/icons/system-log2.png);
   }
 }

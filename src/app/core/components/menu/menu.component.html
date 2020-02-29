@@ -2,7 +2,7 @@
   <ul>
     <li *ngFor="let item of dataset" [ngClass]="{'selected': isSelected(item.link)}">
       <a (click)="go(item)">
-        <i class="{{item.iconCls}}"></i>
+        <i class="{{item.iconCls}}" [ngClass]="{'selected': isSelected(item.link)}"></i>
         <span>{{item.title}}</span>
       </a>
     </li>
