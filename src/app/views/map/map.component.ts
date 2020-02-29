@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -8,18 +7,17 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-
   value = 50;
 
   get sub() {
     return this.activated.snapshot.params['sub'];
   }
 
-
-  constructor(private activated: ActivatedRoute) {
+  get type() {
+    return this.activated.snapshot.queryParams['type'];
   }
 
-  ngOnInit() {
-  }
+  constructor(private activated: ActivatedRoute) {}
 
+  ngOnInit() {}
 }

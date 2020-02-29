@@ -5,7 +5,7 @@ import { CoreModule } from 'src/app/core/core.module';
 import { SystemRoutes } from './system.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { SystemOrganComponent, SystemAuthorityComponent, SystemLogComponent } from './components';
+import { SystemOrganComponent, SystemAuthorityComponent, SystemLogComponent, SystemLogDataComponent, SystemLogMapComponent, SystemLogSysComponent, SystemLogMainComponent, SystemLogDataSearchComponent } from './components';
 
 const modules = [
   CoreModule,
@@ -20,7 +20,12 @@ const components = [
   SystemComponent,
   SystemOrganComponent,
   SystemAuthorityComponent,
-  SystemLogComponent
+  SystemLogComponent,
+  SystemLogDataComponent,
+  SystemLogDataSearchComponent,
+  SystemLogMapComponent,
+  SystemLogSysComponent,
+  SystemLogMainComponent
 ];
 
 const services = [];

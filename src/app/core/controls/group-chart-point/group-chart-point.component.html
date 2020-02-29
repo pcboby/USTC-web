@@ -2,12 +2,22 @@
   <ul *ngFor="let data of dataset" [title]="data.label">
     <li *ngFor="let item of data.data">
       <div class="chart-point-item">
-        <span class="chart-point-item-label">
-          {{item.label}}
-        </span>
-        <span class="chart-point-item-progress">
-          <span class="chart-point-item-progress-bar" [title]="item.value" [style.width]="prece(data.data, item.value)"></span>
-        </span>
+        <div class="chart-point-item-label">
+          {{ item.label }}
+        </div>
+        <div class="chart-point-item-progress">
+          <div
+            class="chart-point-item-progress-bar"
+            [title]="item.value"
+            [style.width]="prece(data.data, item.value) * 100 + '%'"
+          >
+            <span>
+              <ng-container *ngFor="let p of pTmp">
+                <ng-container>● </ng-container>
+              </ng-container>
+            </span>
+          </div>
+        </div>
       </div>
     </li>
   </ul>

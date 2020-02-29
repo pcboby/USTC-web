@@ -215,7 +215,7 @@ export const Navigation = [
       {
         title: '水平净距',
         link: '/map/analysis',
-        queryParams: {type: 'horizontal'},
+        queryParams: {type: '水平净距'},
         iconCls: 'fa fa-cog',
         promise: ''
       },

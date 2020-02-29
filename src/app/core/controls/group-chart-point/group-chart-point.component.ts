@@ -6,6 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./group-chart-point.component.scss']
 })
 export class GroupChartPointComponent implements OnInit {
+
+  pTmp = new Array(30);
+
   @Input()
   dataset = null;
 
@@ -19,8 +22,8 @@ export class GroupChartPointComponent implements OnInit {
       for (const i of d) {
         s += i.value;
       }
-      return s ? v / s * 100 + '%' : '100%';
+      return s ? v / s  : 1;
     }
-    return '100%';
+    return 1;
   }
 }

@@ -34,14 +34,15 @@
         class="container-silder"
         style="padding-left: 10px; width: 268px;"
       >
-        <app-panel>
-          2
+        <app-panel [title]="type">
+          <app-contents [sub]="sub" [type]="type"></app-contents>
         </app-panel>
       </div>
       <div class="container-wraper" style="padding: 0 10px;">
         <app-panel-box>
           <p>arkweb</p>
           <p>sub:{{ sub }}</p>
+          <p>type:{{ type }}</p>
         </app-panel-box
         >
       </div>

@@ -1,0 +1,168 @@
+<ng-container [ngSwitch]="sub">
+  <ng-container *ngSwitchCase="'layer'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'矢量数据'">
+        <app-content-vector></app-content-vector>
+      </ng-container>
+      <ng-container *ngSwitchCase="'模型数据'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'管线数据'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'影像数据'">
+        
+      </ng-container>
+    </ng-container>
+
+
+  </ng-container>
+  <ng-container *ngSwitchCase="'control'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'测量工具'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'标注工具'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'定位工具'">
+        
+      </ng-container>
+    </ng-container>
+
+
+  </ng-container>
+  <ng-container *ngSwitchCase="'pipeline'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'点击查询'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'管径'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'材质'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'附属物'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'复合查询'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'管点使用状态录入'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'能源系统图录入'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'巡视管理'">
+        
+      </ng-container>
+    </ng-container>
+    
+    
+  </ng-container>
+  <ng-container *ngSwitchCase="'statistics'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'分类统计'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'分段统计'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'附属物统计'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'长度统计'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'条数统计'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'维修改造统计'">
+        
+      </ng-container>
+    </ng-container>
+    
+    
+  </ng-container>
+  <ng-container *ngSwitchCase="'analysis'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'横断面分析'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'爆管分析'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'连通分析'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'挖方分析'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'水平净距'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'垂直净距'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'健康分析'">
+        
+      </ng-container>
+    </ng-container>
+    
+    
+  </ng-container>
+  <ng-container *ngSwitchCase="'house'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'属性挂接'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'信息查询'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'信息修改'">
+        
+      </ng-container>
+    </ng-container>
+    
+    
+  </ng-container>
+  <ng-container *ngSwitchCase="'energy'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'监测计量'">
+        
+      </ng-container>
+      <ng-container *ngSwitchCase="'能源系统图'">
+        
+      </ng-container>
+    </ng-container>
+    
+    
+  </ng-container>
+  <ng-container *ngSwitchCase="'print'">
+    
+
+    <ng-container [ngSwitch]="type">
+      <ng-container *ngSwitchCase="'专题图输出'">
+        
+      </ng-container>
+    </ng-container>
+    
+    
+  </ng-container>
+</ng-container>
