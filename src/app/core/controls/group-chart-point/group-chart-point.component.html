@@ -1,6 +1,12 @@
 <div class="chart-point">
+  <div class="chart-point-legend">
+    <div *ngFor="let item of legend; let idx=index;">
+      <span class="chart-point-legend-point" [ngStyle]="{'background': colors[idx],'-webkit-background-clip': 'text'}">●</span>
+      <span class="chart-point-legend-label">{{item.label}}</span>
+    </div>
+  </div>
   <ul *ngFor="let data of dataset" [title]="data.label">
-    <li *ngFor="let item of data.data">
+    <li *ngFor="let item of data.data; let idx=index;">
       <div class="chart-point-item">
         <div class="chart-point-item-label">
           {{ item.label }}
@@ -11,7 +17,7 @@
             [title]="item.value"
             [style.width]="prece(data.data, item.value) * 100 + '%'"
           >
-            <span>
+            <span [ngStyle]="{'background': colors[idx],'-webkit-background-clip': 'text'}">
               <ng-container *ngFor="let p of pTmp">
                 <ng-container>● </ng-container>
               </ng-container>

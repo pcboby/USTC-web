@@ -138,42 +138,42 @@ export const Navigation = [
         title: '分类统计',
         link: '/map/statistics',
         queryParams: {type: '分类统计'},
-        iconCls: 'fa fa-cog',
+        iconCls: 'icon-menu-statistics-classify',
         promise: ''
       },
       {
         title: '分段统计',
         link: '/map/statistics',
         queryParams: {type: '分段统计'},
-        iconCls: 'fa fa-cog',
+        iconCls: 'icon-menu-statistics-breaking',
         promise: ''
       },
       {
         title: '附属物统计',
         link: '/map/statistics',
         queryParams: {type: '附属物统计'},
-        iconCls: 'fa fa-cog',
+        iconCls: 'icon-menu-statistics-appendages',
         promise: ''
       },
       {
         title: '长度统计',
         link: '/map/statistics',
         queryParams: {type: '长度统计'},
-        iconCls: 'fa fa-cog',
+        iconCls: 'icon-menu-statistics-length',
         promise: ''
       },
       {
         title: '条数统计',
         link: '/map/statistics',
         queryParams: {type: '条数统计'},
-        iconCls: 'fa fa-cog',
+        iconCls: 'icon-menu-statistics-number',
         promise: ''
       },
       {
         title: '维修改造统计',
         link: '/map/statistics',
         queryParams: {type: '维修改造统计'},
-        iconCls: 'fa fa-cog',
+        iconCls: 'icon-menu-statistics-repair',
         promise: ''
       }
     ]

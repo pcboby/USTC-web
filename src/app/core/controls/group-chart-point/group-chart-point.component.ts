@@ -12,6 +12,12 @@ export class GroupChartPointComponent implements OnInit {
   @Input()
   dataset = null;
 
+  @Input()
+  colors = null;
+
+  @Input()
+  legend = null;
+
   constructor() {}
 
   ngOnInit() {}

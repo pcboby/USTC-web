@@ -1,5 +1,21 @@
 .chart-point {
   overflow: hidden;
+  .chart-point-legend {
+    padding: 0 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    div {
+      padding: 0 5px;
+      display: inline-block;
+      .chart-point-legend-label {
+        display: inline-block;
+      }
+      .chart-point-legend-point {
+        margin-right: 5px;
+        color: transparent;
+      }
+    }
+  }
   ul {
     display: block;
     position: relative;

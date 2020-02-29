@@ -311,6 +311,42 @@
     background-image: url(../images/icons/statistics2.png);
   }
 }
+.icon-menu-statistics-classify{
+  background-image: url(../images/icons/statistics-classify.png);
+  &.selected {
+    background-image: url(../images/icons/statistics-classify2.png);
+  }
+}
+.icon-menu-statistics-breaking{
+  background-image: url(../images/icons/statistics-breaking.png);
+  &.selected {
+    background-image: url(../images/icons/statistics-breaking2.png);
+  }
+}
+.icon-menu-statistics-appendages{
+  background-image: url(../images/icons/statistics-appendages.png);
+  &.selected {
+    background-image: url(../images/icons/statistics-appendages2.png);
+  }
+}
+.icon-menu-statistics-length{
+  background-image: url(../images/icons/statistics-length.png);
+  &.selected {
+    background-image: url(../images/icons/statistics-length2.png);
+  }
+}
+.icon-menu-statistics-number{
+  background-image: url(../images/icons/statistics-number.png);
+  &.selected {
+    background-image: url(../images/icons/statistics-number2.png);
+  }
+}
+.icon-menu-statistics-repair{
+  background-image: url(../images/icons/statistics-repair.png);
+  &.selected {
+    background-image: url(../images/icons/statistics-repair2.png);
+  }
+}
 // -------------------
 .icon-menu-analysis{
   background-image: url(../images/icons/analysis.png);

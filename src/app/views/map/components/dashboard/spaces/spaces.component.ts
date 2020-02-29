@@ -6,6 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./spaces.component.css']
 })
 export class SpacesComponent implements OnInit {
+  colors = [
+    'linear-gradient(to right, #dd5f89, #f7ba97)',
+    'linear-gradient(to right, #08cfa2, #eaffcc)',
+    'linear-gradient(to right, #3a6ef9, #ca84e3)',
+    'linear-gradient(to right, #f76e1b, #ffff00)',
+    'linear-gradient(to right, #05b1e6, #94ddf4)'
+  ];
+  legend = [
+    {
+      label: '教学科研'
+    },
+    {
+      label: '保障服务'
+    },
+    {
+      label: '综合'
+    },
+    {
+      label: '公寓'
+    },
+    {
+      label: '历史建筑'
+    }
+  ];
   dataset = [
     {
       label: '东校区',
@@ -31,7 +55,8 @@ export class SpacesComponent implements OnInit {
           value: 86
         }
       ]
-    },{
+    },
+    {
       label: '南校区',
       data: [
         {
@@ -55,7 +80,8 @@ export class SpacesComponent implements OnInit {
           value: 86
         }
       ]
-    },{
+    },
+    {
       label: '西校区',
       data: [
         {
@@ -79,7 +105,8 @@ export class SpacesComponent implements OnInit {
           value: 86
         }
       ]
-    },{
+    },
+    {
       label: '北校区',
       data: [
         {
