@@ -1,9 +1,12 @@
 // -----------------------------------------
 .menu {
   ul {
+    display: flex;
+    flex-direction: row;
     li {
-      display: inline-block;
+      flex: 1;
       position: relative;
+      min-width: 84px;
       a {
         display: block;
         line-height: 20px;
@@ -41,7 +44,7 @@
           right: 0;
           bottom: 0;
           background-image: url(../images/menu-line.png);
-          background-size: contain;
+          background-size: cover;
         }
       }
     }
