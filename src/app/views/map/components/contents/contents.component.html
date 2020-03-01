@@ -4,16 +4,16 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'矢量数据'">
-        <app-content-vector></app-content-vector>
+        <app-layer-vector></app-layer-vector>
       </ng-container>
       <ng-container *ngSwitchCase="'模型数据'">
-        
+        <app-layer-module></app-layer-module>
       </ng-container>
       <ng-container *ngSwitchCase="'管线数据'">
-        
+        <app-layer-pipeline></app-layer-pipeline>
       </ng-container>
       <ng-container *ngSwitchCase="'影像数据'">
-        
+        <app-layer-image></app-layer-image>
       </ng-container>
     </ng-container>
 
@@ -24,13 +24,13 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'测量工具'">
-        
+        <app-control-measure></app-control-measure>
       </ng-container>
       <ng-container *ngSwitchCase="'标注工具'">
-        
+        <app-control-tagging></app-control-tagging>
       </ng-container>
       <ng-container *ngSwitchCase="'定位工具'">
-        
+        <app-control-location></app-control-location>
       </ng-container>
     </ng-container>
 
@@ -41,28 +41,28 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'点击查询'">
-        
+        <app-pipeline-click></app-pipeline-click>
       </ng-container>
       <ng-container *ngSwitchCase="'管径'">
-        
+        <app-pipeline-size></app-pipeline-size>
       </ng-container>
       <ng-container *ngSwitchCase="'材质'">
-        
+        <app-pipeline-material></app-pipeline-material>
       </ng-container>
       <ng-container *ngSwitchCase="'附属物'">
-        
+        <app-pipeline-appendages></app-pipeline-appendages>
       </ng-container>
       <ng-container *ngSwitchCase="'复合查询'">
-        
+        <app-pipeline-combination></app-pipeline-combination>
       </ng-container>
       <ng-container *ngSwitchCase="'管点使用状态录入'">
-        
+        <app-pipeline-point></app-pipeline-point>
       </ng-container>
       <ng-container *ngSwitchCase="'能源系统图录入'">
-        
+        <app-pipeline-power></app-pipeline-power>
       </ng-container>
       <ng-container *ngSwitchCase="'巡视管理'">
-        
+        <app-pipeline-patrol></app-pipeline-patrol>
       </ng-container>
     </ng-container>
     
@@ -73,22 +73,22 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'分类统计'">
-        
+        <app-statistics-classify></app-statistics-classify>
       </ng-container>
       <ng-container *ngSwitchCase="'分段统计'">
-        
+        <app-statistics-breaking></app-statistics-breaking>
       </ng-container>
       <ng-container *ngSwitchCase="'附属物统计'">
-        
+        <app-statistics-appendages></app-statistics-appendages>
       </ng-container>
       <ng-container *ngSwitchCase="'长度统计'">
-        
+        <app-statistics-length></app-statistics-length>
       </ng-container>
       <ng-container *ngSwitchCase="'条数统计'">
-        
+        <app-statistics-number></app-statistics-number>
       </ng-container>
       <ng-container *ngSwitchCase="'维修改造统计'">
-        
+        <app-statistics-repair></app-statistics-repair>
       </ng-container>
     </ng-container>
     
@@ -99,25 +99,25 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'横断面分析'">
-        
+        <app-analysis-cross></app-analysis-cross>
       </ng-container>
       <ng-container *ngSwitchCase="'爆管分析'">
-        
+        <app-analysis-tube></app-analysis-tube>
       </ng-container>
       <ng-container *ngSwitchCase="'连通分析'">
-        
+        <app-analysis-connected></app-analysis-connected>
       </ng-container>
       <ng-container *ngSwitchCase="'挖方分析'">
-        
+        <app-analysis-excavation></app-analysis-excavation>
       </ng-container>
       <ng-container *ngSwitchCase="'水平净距'">
-        
+        <app-analysis-horizontal></app-analysis-horizontal>
       </ng-container>
       <ng-container *ngSwitchCase="'垂直净距'">
-        
+        <app-analysis-vertical></app-analysis-vertical>
       </ng-container>
       <ng-container *ngSwitchCase="'健康分析'">
-        
+        <app-analysis-healthy></app-analysis-healthy>
       </ng-container>
     </ng-container>
     
@@ -128,13 +128,13 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'属性挂接'">
-        
+        <app-house-attrib></app-house-attrib>
       </ng-container>
       <ng-container *ngSwitchCase="'信息查询'">
-        
+        <app-house-information></app-house-information>
       </ng-container>
       <ng-container *ngSwitchCase="'信息修改'">
-        
+        <app-house-modify></app-house-modify>
       </ng-container>
     </ng-container>
     
@@ -145,10 +145,10 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'监测计量'">
-        
+        <app-energy-monitoring></app-energy-monitoring>
       </ng-container>
       <ng-container *ngSwitchCase="'能源系统图'">
-        
+        <app-energy-map></app-energy-map>
       </ng-container>
     </ng-container>
     
@@ -159,7 +159,7 @@
 
     <ng-container [ngSwitch]="type">
       <ng-container *ngSwitchCase="'专题图输出'">
-        
+        <app-print-special></app-print-special>
       </ng-container>
     </ng-container>
     

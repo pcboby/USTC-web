@@ -1,3 +1,4 @@
+
 import { MapRoutes } from './map.routing';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -5,8 +6,49 @@ import { MapComponent } from './map.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { AreasComponent, BuildingsComponent, SpacesComponent, PipelineComponent, PowerComponent, ContentsComponent, ContentVectorComponent } from './components';
+import {
+  AreasComponent,
+  BuildingsComponent,
+  SpacesComponent,
+  PipelineComponent,
+  PowerComponent,
+  ContentsComponent,
+  LayerVectorComponent,
+  EnergyMonitoringComponent,
+  AnalysisConnectedComponent,
+  AnalysisCrossComponent,
+  AnalysisExcavationComponent,
+  AnalysisHealthyComponent,
+  AnalysisHorizontalComponent,
+  AnalysisTubeComponent,
+  AnalysisVerticalComponent,
+  ControlLocationComponent,
+  ControlMeasureComponent,
+  ControlTaggingComponent,
+  EnergyMapComponent,
+  HouseAttribComponent,
+  HouseInformationComponent,
+  HouseModifyComponent,
+  LayerImageComponent,
+  LayerModuleComponent,
+  LayerPipelineComponent,
+  PipelineAppendagesComponent,
+  PipelineClickComponent,
+  PipelineCombinationComponent,
+  PipelineMaterialComponent,
+  PipelinePointComponent,
+  PipelinePatrolComponent,
+  PipelinePowerComponent,
+  PipelineSizeComponent,
+  StatisticsAppendagesComponent,
+  StatisticsBreakingComponent,
+  StatisticsClassifyComponent,
+  StatisticsLengthComponent,
+  StatisticsNumberComponent,
+  StatisticsRepairComponent
+} from './components';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { PrintSpecialComponent } from './components/contents/components/print-special/print-special.component';
 
 const modules = [
   CoreModule,
@@ -27,23 +69,56 @@ const components = [
   PowerComponent,
 
   ContentsComponent,
-  ContentVectorComponent
+
+  AnalysisConnectedComponent,
+  AnalysisCrossComponent,
+  AnalysisExcavationComponent,
+  AnalysisHealthyComponent,
+  AnalysisHorizontalComponent,
+  AnalysisTubeComponent,
+  AnalysisVerticalComponent,
+
+  ControlLocationComponent,
+  ControlMeasureComponent,
+  ControlTaggingComponent,
+
+  EnergyMapComponent,
+  EnergyMonitoringComponent,
+
+  HouseAttribComponent,
+  HouseInformationComponent,
+  HouseModifyComponent,
+
+  LayerVectorComponent,
+  LayerImageComponent,
+  LayerModuleComponent,
+  LayerPipelineComponent,
+
+  PipelineAppendagesComponent,
+  PipelineClickComponent,
+  PipelineCombinationComponent,
+  PipelineMaterialComponent,
+  PipelinePointComponent,
+  PipelinePatrolComponent,
+  PipelinePowerComponent,
+  PipelineSizeComponent,
+
+  PrintSpecialComponent,
+
+  StatisticsAppendagesComponent,
+  StatisticsBreakingComponent,
+  StatisticsClassifyComponent,
+  StatisticsLengthComponent,
+  StatisticsNumberComponent,
+  StatisticsRepairComponent
 ];
 
 const services = [];
 
 @NgModule({
-  imports: [
-    ...modules
-  ],
-  providers: [
-    ...services
-  ],
-  declarations: [
-    ...components
-  ],
-  entryComponents: [
-    ...components
-  ]
+  imports: [...modules],
+  providers: [...services],
+  declarations: [...components],
+  entryComponents: [...components]
 })
-export class MapModule { }
+export class MapModule {}

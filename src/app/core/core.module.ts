@@ -30,7 +30,7 @@ import {
 } from './components';
 import { SpinnerService } from './services';
 import { TimingIntercepterService, BaseIntercepterService } from './interceptors';
-import { GroupTextComponent, GroupChartPointComponent } from './controls';
+import { GroupTextComponent, GroupChartPointComponent, GroupHelpComponent } from './controls';
 
 const modules = [
   FormsModule,
@@ -72,6 +72,7 @@ const components = [
   PanelBoxComponent
 ];
 const controls = [
+  GroupHelpComponent,
   GroupUserComponent,
   GroupTextComponent,
   GroupChartPointComponent

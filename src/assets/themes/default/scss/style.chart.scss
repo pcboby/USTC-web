@@ -21,6 +21,7 @@
     position: relative;
     margin-right: 32px;
     margin-bottom: 24px;
+    background: linear-gradient(to right, transparent, transparent, rgba($color: #fff, $alpha: 0.1));
     &:last-child {
       margin-bottom: 0;
     }

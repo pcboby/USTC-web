@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ContentVectorComponent } from './content-vector.component';
+import { PipelineCombinationComponent } from './pipeline-combination.component';
 
-describe('ContentVectorComponent', () => {
-  let component: ContentVectorComponent;
-  let fixture: ComponentFixture<ContentVectorComponent>;
+describe('PipelineCombinationComponent', () => {
+  let component: PipelineCombinationComponent;
+  let fixture: ComponentFixture<PipelineCombinationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContentVectorComponent ]
+      declarations: [ PipelineCombinationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContentVectorComponent);
+    fixture = TestBed.createComponent(PipelineCombinationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
