@@ -6,7 +6,7 @@
     li {
       flex: 1;
       position: relative;
-      min-width: 84px;
+      // min-width: 84px;
       a {
         display: block;
         line-height: 20px;
@@ -26,6 +26,8 @@
         span {
           display: block;
           text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
         }
       }
       &.selected {

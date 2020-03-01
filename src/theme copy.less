@@ -38,7 +38,7 @@
 // Background color for `<body>`
 @body-background: transparent ;//#fff;
 // Base background color for most components
-@component-background: #003a7a; //#014188; // #fff;
+@component-background: #014188; // #fff;
 @font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -148,7 +148,7 @@
 @btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
 
 @btn-primary-color: #fff;
-@btn-primary-bg: rgb(0, 138, 192); // @primary-color;
+@btn-primary-bg: @primary-color;
 
 @btn-default-color: @text-color;
 @btn-default-bg: @component-background;
@@ -314,7 +314,7 @@
 @input-padding-vertical-base: 4px;
 @input-padding-vertical-sm: 1px;
 @input-padding-vertical-lg: 6px;
-@input-placeholder-color: rgba(255,255,255,.3) ;//hsv(0, 0, 75%);
+@input-placeholder-color: hsv(0, 0, 75%);
 @input-color: @text-color;
 @input-border-color: @border-color-base;
 @input-bg: @component-background;
