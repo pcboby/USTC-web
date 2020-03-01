@@ -32,6 +32,13 @@ export const Navigation = [
         queryParams: {type: '影像数据'},
         iconCls: 'icon-menu-layer-image',
         promise: ''
+      },
+      {
+        title: '监控数据',
+        link: '/map/layer',
+        queryParams: {type: '监控数据'},
+        iconCls: 'icon-menu-layer-vadio',
+        promise: ''
       }
     ]
   },

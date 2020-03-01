@@ -28,6 +28,12 @@ li {
 
 .table-operations{
   margin-bottom: 10px;
+  button{
+    margin-right: .625em;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 // .scroll {
 //   &::-webkit-scrollbar {

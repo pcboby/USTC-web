@@ -45,10 +45,11 @@ import {
   StatisticsClassifyComponent,
   StatisticsLengthComponent,
   StatisticsNumberComponent,
-  StatisticsRepairComponent
+  StatisticsRepairComponent,
+  LayerVadioComponent,
+  PrintSpecialComponent
 } from './components';
 import { NgxEchartsModule } from 'ngx-echarts';
-import { PrintSpecialComponent } from './components/contents/components/print-special/print-special.component';
 
 const modules = [
   CoreModule,
@@ -93,6 +94,7 @@ const components = [
   LayerImageComponent,
   LayerModuleComponent,
   LayerPipelineComponent,
+  LayerVadioComponent,
 
   PipelineAppendagesComponent,
   PipelineClickComponent,

@@ -10,6 +10,7 @@ export * from './contents/components/layer-vector/layer-vector.component';
 export * from './contents/components/layer-module/layer-module.component';
 export * from './contents/components/layer-pipeline/layer-pipeline.component';
 export * from './contents/components/layer-image/layer-image.component';
+export * from './contents/components/layer-vadio/layer-vadio.component';
 
 export * from './contents/components/analysis-connected/analysis-connected.component';
 export * from './contents/components/analysis-cross/analysis-cross.component';
@@ -38,6 +39,8 @@ export * from './contents/components/pipeline-patrol/pipeline-patrol.component';
 export * from './contents/components/pipeline-power/pipeline-power.component';
 export * from './contents/components/pipeline-point/pipeline-point.component';
 export * from './contents/components/pipeline-size/pipeline-size.component';
+
+export * from './contents/components/print-special/print-special.component';
 
 export * from './contents/components/statistics-appendages/statistics-appendages.component';
 export * from './contents/components/statistics-breaking/statistics-breaking.component';

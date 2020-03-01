@@ -1,8 +1,19 @@
-<div class="group-user">
+<a class="group-user" nz-dropdown [nzDropdownMenu]="menu">
   <nz-avatar
     nzSize="small"
     nzIcon="user"
     style="margin-right: 10px;"
   ></nz-avatar>
   <span>username</span>
-</div>
+  <i nz-icon nzType="down"></i>
+</a>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu>
+    <li nz-menu-item>用户信息</li>
+    <li nz-menu-divider></li>
+    <li nz-menu-item nzDisabled>关于我们</li>
+    <li nz-menu-item nzDisabled>系统帮助</li>
+    <li nz-menu-divider></li>
+    <li nz-menu-item>退出系统</li>
+  </ul>
+</nz-dropdown-menu>

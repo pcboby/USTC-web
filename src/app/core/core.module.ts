@@ -29,8 +29,16 @@ import {
   MenuSubComponent
 } from './components';
 import { SpinnerService } from './services';
-import { TimingIntercepterService, BaseIntercepterService } from './interceptors';
-import { GroupTextComponent, GroupChartPointComponent, GroupHelpComponent } from './controls';
+import {
+  TimingIntercepterService,
+  BaseIntercepterService,
+  LoaderIntercepterService
+} from './interceptors';
+import {
+  GroupTextComponent,
+  GroupChartPointComponent,
+  GroupHelpComponent
+} from './controls';
 
 const modules = [
   FormsModule,
@@ -44,9 +52,16 @@ const modules = [
 const interceptors = [
   {
     provide: HTTP_INTERCEPTORS,
+    useClass: LoaderIntercepterService,
+    multi: true,
+    deps: [SpinnerService]
+  },
+  {
+    provide: HTTP_INTERCEPTORS,
     useClass: TimingIntercepterService,
     multi: true
-  }, {
+  },
+  {
     provide: HTTP_INTERCEPTORS,
     useClass: BaseIntercepterService,
     multi: true
@@ -98,7 +113,7 @@ registerLocaleData(zh);
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
     // if (parentModule) {
-    //   console.error(`CoreModule has already been loaded. Import Core modules in the AppModule only.`); // new Error
+    //   throw new Error(`CoreModule has already been loaded. Import Core modules in the AppModule only.`);
     // }
   }
 }
