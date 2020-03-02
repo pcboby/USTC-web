@@ -1,3 +1,12 @@
-<p>
-  layer-image works!
-</p>
+<app-group-help code="layer-image"></app-group-help>
+
+<div class="group-image">
+  <ul>
+    <li *ngFor="let item of dataset" [ngClass]="{'selected': selected === item.id}" (click)="toggle(item.id)">
+      <a class="group-image-item">
+        <img [src]="item.image">
+        <span>{{item.title}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -9,13 +9,16 @@ import {
   SystemOrganComponent,
   SystemOrganDepartmentComponent,
   SystemOrganUserComponent,
+  SystemOrganUserSearchComponent,
   SystemAuthorityComponent,
   SystemLogComponent,
   SystemLogDataComponent,
   SystemLogMapComponent,
   SystemLogSysComponent,
   SystemLogMainComponent,
-  SystemLogDataSearchComponent
+  SystemLogDataSearchComponent,
+  SystemOrganUserDetailComponent,
+  SystemOrganUserEditComponent
 } from './components';
 
 const modules = [
@@ -32,6 +35,9 @@ const components = [
   SystemOrganComponent,
   SystemOrganDepartmentComponent,
   SystemOrganUserComponent,
+  SystemOrganUserSearchComponent,
+  SystemOrganUserDetailComponent,
+  SystemOrganUserEditComponent,
   SystemAuthorityComponent,
   SystemLogComponent,
   SystemLogDataComponent,

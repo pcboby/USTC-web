@@ -2,6 +2,9 @@
 export * from './system-organ/system-organ.component';
 export * from './system-organ/components/system-organ-department/system-organ-department.component';
 export * from './system-organ/components/system-organ-user/system-organ-user.component';
+export * from './system-organ/components/system-organ-user/components/system-organ-user-search/system-organ-user-search.component';
+export * from './system-organ/components/system-organ-user/components/system-organ-user-detail/system-organ-user-detail.component';
+export * from './system-organ/components/system-organ-user/components/system-organ-user-edit/system-organ-user-edit.component';
 //
 export * from './system-authority/system-authority.component';
 //
