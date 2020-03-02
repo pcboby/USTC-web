@@ -1,0 +1,24 @@
+// ----------------------------
+.ark-map{}
+// ----------------------------
+.ark-control-alpha{
+    min-width: 120px;
+}
+.ark-control-coordinate{
+    padding: 0 10px;
+    color: rgba($color: #fff, $alpha: .8);
+    span{
+        position: relative;
+        top: -1px;
+        color: rgba($color: #fff, $alpha: 1);
+        display: inline-block;
+        vertical-align: middle;
+        width: 3.5em;
+        line-height: 1.675em;
+        padding: .135em .315em;
+        border: 1px solid rgba($color: #00ffff, $alpha: .3);
+        background-color: rgba($color: #000000, $alpha: .15);
+        border-radius: 3px;
+        text-align: center;
+    }
+}

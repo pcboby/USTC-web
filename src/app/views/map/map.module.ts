@@ -1,3 +1,4 @@
+import { ArkModule } from './../../ark/ark.module';
 
 import { MapRoutes } from './map.routing';
 import { NgModule } from '@angular/core';
@@ -52,6 +53,7 @@ import {
 import { NgxEchartsModule } from 'ngx-echarts';
 
 const modules = [
+  ArkModule,
   CoreModule,
   CommonModule,
   FormsModule,

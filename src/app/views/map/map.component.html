@@ -41,7 +41,7 @@
       </div>
       <div class="container-wraper" style="padding: 0 10px;">
         <app-panel-box>
-          <p>arkweb</p>
+          <app-ark-map></app-ark-map>
           <p>sub:{{ sub }}</p>
           <p>type:{{ type }}</p>
         </app-panel-box
@@ -76,10 +76,4 @@
       </div>
     </div>
   </div>
-</div>
-<div
-  class="map-control"
-  style="position: fixed; bottom:0; right:0;width: 120px;"
->
-  <nz-slider [(ngModel)]="value"></nz-slider>
 </div>

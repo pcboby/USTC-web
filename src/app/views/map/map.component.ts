@@ -7,7 +7,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  value = 50;
 
   get sub() {
     return this.activated.snapshot.params['sub'];

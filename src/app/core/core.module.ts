@@ -39,8 +39,10 @@ import {
   GroupChartPointComponent,
   GroupHelpComponent
 } from './controls';
+import { ArkModule } from '../ark/ark.module';
 
 const modules = [
+  ArkModule,
   FormsModule,
   ReactiveFormsModule,
   RouterModule,
