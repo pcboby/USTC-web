@@ -40,6 +40,8 @@ export * from './contents/components/pipeline-patrol/pipeline-patrol.component';
 export * from './contents/components/pipeline-power/pipeline-power.component';
 export * from './contents/components/pipeline-point/pipeline-point.component';
 export * from './contents/components/pipeline-size/pipeline-size.component';
+export * from './contents/components/pipeline-modify/pipeline-modify.component';
+export * from './contents/components/pipeline-history/pipeline-history.component';
 
 export * from './contents/components/print-special/print-special.component';
 

@@ -59,7 +59,17 @@
         <app-pipeline-combination></app-pipeline-combination>
       </ng-container>
       <ng-container *ngSwitchCase="'空间查询'">
-        <app-pipeline-space></app-pipeline-space>
+        <nz-tabset [nzType]="'card'">
+          <nz-tab nzTitle="管线">
+            <app-pipeline-space></app-pipeline-space>
+          </nz-tab>
+          <nz-tab nzTitle="历史管线">
+            <app-pipeline-history></app-pipeline-history>
+          </nz-tab>
+        </nz-tabset>
+      </ng-container>
+      <ng-container *ngSwitchCase="'维修改造信息录入'">
+        <app-pipeline-modify></app-pipeline-modify>
       </ng-container>
       <ng-container *ngSwitchCase="'管点使用状态录入'">
         <app-pipeline-point></app-pipeline-point>

@@ -84,6 +84,16 @@ export const Help = {
         message: '操作提示',
         description: '巡视管理： 勾选状态树，选择是否展示道路图层或校区范围图层。'
     },
+    'pipeline-history': {
+        type: 'info',
+        message: '操作提示',
+        description: '历史管线查询： 勾选状态树，选择是否展示道路图层或校区范围图层。'
+    },
+    'pipeline-modify': {
+        type: 'info',
+        message: '操作提示',
+        description: '维修改造信息录入： 勾选状态树，选择是否展示道路图层或校区范围图层。'
+    },
     'statistics-classify': {
         type: 'info',
         message: '操作提示',

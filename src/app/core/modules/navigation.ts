@@ -120,13 +120,6 @@ export const Navigation = [
         promise: ''
       },
       {
-        title: '历史管线查询',
-        link: '/map/pipeline',
-        queryParams: {type: '历史管线查询'},
-        iconCls: 'icon-menu-pipeline-history',
-        promise: ''
-      },
-      {
         title: '维修改造信息录入',
         link: '/map/pipeline',
         queryParams: {type: '维修改造信息录入'},

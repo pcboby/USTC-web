@@ -1,0 +1,35 @@
+<app-group-help code="pipeline-history"></app-group-help>
+
+<div class="table-operations">
+  <form nz-form [formGroup]="validateForm">
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">地图选择</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <button nz-button>选择</button>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">开始时间</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <nz-date-picker></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">结束时间</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <nz-date-picker></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control [nzSpan]="24" class="vCenter">
+        <button nz-button nzType="primary">
+          查询
+        </button>
+        <button nz-button>重置</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>

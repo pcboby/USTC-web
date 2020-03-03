@@ -49,7 +49,9 @@ import {
   StatisticsRepairComponent,
   LayerVadioComponent,
   PrintSpecialComponent,
-  PipelineSpaceComponent
+  PipelineSpaceComponent,
+  PipelineModifyComponent,
+  PipelineHistoryComponent
 } from './components';
 import { NgxEchartsModule } from 'ngx-echarts';
 
@@ -108,6 +110,8 @@ const components = [
   PipelineSpaceComponent,
   PipelinePowerComponent,
   PipelineSizeComponent,
+  PipelineModifyComponent,
+  PipelineHistoryComponent,
 
   PrintSpecialComponent,
 
