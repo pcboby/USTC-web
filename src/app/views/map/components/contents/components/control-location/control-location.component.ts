@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-control-location',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlLocationComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
+  default_form_value = {
+    keyword: [null]
+  };
+
+  validateForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.validateForm = this.fb.group(this.default_form_value);
   }
 
 }

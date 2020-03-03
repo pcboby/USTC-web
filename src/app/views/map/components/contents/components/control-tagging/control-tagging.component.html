@@ -1,1 +1,20 @@
 <app-group-help code="control-tagging"></app-group-help>
+<div class="table-operations">
+  <form nz-form [formGroup]="validateForm">
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">标注内容</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <app-input-group formControlName="keyword"> </app-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control [nzSpan]="24" class="vCenter">
+        <button nz-button nzType="primary">
+          设置
+        </button>
+        <button nz-button>重置</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>

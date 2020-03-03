@@ -37,7 +37,8 @@ import {
 import {
   GroupTextComponent,
   GroupChartPointComponent,
-  GroupHelpComponent
+  GroupHelpComponent,
+  InputGroupComponent
 } from './controls';
 import { ArkModule } from '../ark/ark.module';
 
@@ -92,7 +93,8 @@ const controls = [
   GroupHelpComponent,
   GroupUserComponent,
   GroupTextComponent,
-  GroupChartPointComponent
+  GroupChartPointComponent,
+  InputGroupComponent
 ];
 const directives = [];
 const pipes = [];
