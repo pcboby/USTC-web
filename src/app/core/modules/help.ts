@@ -74,6 +74,11 @@ export const Help = {
         message: '操作提示',
         description: '能源系统图录入： 勾选状态树，选择是否展示道路图层或校区范围图层。'
     },
+    'pipeline-space': {
+        type: 'info',
+        message: '操作提示',
+        description: '空间查询： 勾选状态树，选择是否展示道路图层或校区范围图层。'
+    },
     'pipeline-patrol': {
         type: 'info',
         message: '操作提示',

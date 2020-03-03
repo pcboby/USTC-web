@@ -113,6 +113,27 @@ export const Navigation = [
         promise: ''
       },
       {
+        title: '空间查询',
+        link: '/map/pipeline',
+        queryParams: {type: '空间查询'},
+        iconCls: 'icon-menu-pipeline-space',
+        promise: ''
+      },
+      {
+        title: '历史管线查询',
+        link: '/map/pipeline',
+        queryParams: {type: '历史管线查询'},
+        iconCls: 'icon-menu-pipeline-history',
+        promise: ''
+      },
+      {
+        title: '维修改造信息录入',
+        link: '/map/pipeline',
+        queryParams: {type: '维修改造信息录入'},
+        iconCls: 'icon-menu-pipeline-modify',
+        promise: ''
+      },
+      {
         title: '管点使用状态录入',
         link: '/map/pipeline',
         queryParams: {type: '管点使用状态录入'},

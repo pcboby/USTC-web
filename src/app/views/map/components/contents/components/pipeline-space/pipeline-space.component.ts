@@ -2,15 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'app-pipeline-combination',
-  templateUrl: './pipeline-combination.component.html',
-  styleUrls: ['./pipeline-combination.component.css']
+  selector: 'app-pipeline-space',
+  templateUrl: './pipeline-space.component.html',
+  styleUrls: ['./pipeline-space.component.css']
 })
-export class PipelineCombinationComponent implements OnInit {
+export class PipelineSpaceComponent implements OnInit {
 
   default_form_value = {
-    ranges: [null],
-    pipelineType: [null]
+    keyword: [null]
   };
 
   validateForm: FormGroup;

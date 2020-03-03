@@ -35,6 +35,7 @@ export * from './contents/components/pipeline-click/pipeline-click.component';
 export * from './contents/components/pipeline-appendages/pipeline-appendages.component';
 export * from './contents/components/pipeline-combination/pipeline-combination.component';
 export * from './contents/components/pipeline-material/pipeline-material.component';
+export * from './contents/components/pipeline-space/pipeline-space.component';
 export * from './contents/components/pipeline-patrol/pipeline-patrol.component';
 export * from './contents/components/pipeline-power/pipeline-power.component';
 export * from './contents/components/pipeline-point/pipeline-point.component';

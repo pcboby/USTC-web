@@ -303,6 +303,24 @@
     background-image: url(../images/icons/pipeline-power2.png);
   }
 }
+.icon-menu-pipeline-space{
+  background-image: url(../images/icons/pipeline-space.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-space2.png);
+  }
+}
+.icon-menu-pipeline-modify{
+  background-image: url(../images/icons/pipeline-modify.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-modify2.png);
+  }
+}
+.icon-menu-pipeline-history{
+  background-image: url(../images/icons/pipeline-modify.png);
+  &.selected {
+    background-image: url(../images/icons/pipeline-modify2.png);
+  }
+}
 .icon-menu-pipeline-patrol{
   background-image: url(../images/icons/pipeline-patrol.png);
   &.selected {
