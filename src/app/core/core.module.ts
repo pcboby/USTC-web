@@ -38,7 +38,11 @@ import {
   GroupTextComponent,
   GroupChartPointComponent,
   GroupHelpComponent,
-  InputGroupComponent
+  InputGroupComponent,
+  SelectPipelineTypeComponent,
+  CheckPipelineSizeComponent,
+  CheckPipelineMaterialComponent,
+  CheckPipelineAppendagesComponent
 } from './controls';
 import { ArkModule } from '../ark/ark.module';
 
@@ -94,7 +98,11 @@ const controls = [
   GroupUserComponent,
   GroupTextComponent,
   GroupChartPointComponent,
-  InputGroupComponent
+  InputGroupComponent,
+  SelectPipelineTypeComponent,
+  CheckPipelineSizeComponent,
+  CheckPipelineMaterialComponent,
+  CheckPipelineAppendagesComponent
 ];
 const directives = [];
 const pipes = [];

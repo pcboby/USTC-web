@@ -1,0 +1,6 @@
+<nz-select style="width: 100%; min-width: 140px;" [(ngModel)]="model" nzShowSearch nzAllowClear
+  [nzPlaceHolder]="placeHolder" [nzDisabled]="disabled">
+  <nz-option *ngFor="let data of dataset" [nzValue]="data[target]"
+    [nzLabel]="data[field]">
+  </nz-option>
+</nz-select>

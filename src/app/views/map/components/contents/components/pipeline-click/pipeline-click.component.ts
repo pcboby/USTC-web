@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-pipeline-click',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipelineClickComponent implements OnInit {
 
-  constructor() { }
+  default_form_value = {
+    keyword: [null]
+  };
 
-  ngOnInit() {
+  validateForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.validateForm = this.fb.group(this.default_form_value);
   }
 
 }
