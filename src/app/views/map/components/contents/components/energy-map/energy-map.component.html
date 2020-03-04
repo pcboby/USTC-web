@@ -1,1 +1,25 @@
 <app-group-help code="energy-map"></app-group-help>
+
+<div class="table-operations">
+    <form nz-form [formGroup]="validateForm">
+      <nz-form-item>
+        <nz-form-label [nzSm]="8" [nzXs]="24">能源站点</nz-form-label>
+        <nz-form-control [nzSm]="16" [nzXs]="24">
+          <nz-select nzShowSearch nzAllowClear nzPlaceHolder="选择能源站点">
+              <!-- <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+              <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+              <nz-option nzLabel="Tom" nzValue="tom"></nz-option> -->
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+  
+      <nz-form-item>
+        <nz-form-control [nzSpan]="24" class="vCenter">
+          <button nz-button nzType="primary">
+            查询
+          </button>
+          <button nz-button>重置</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </div>
