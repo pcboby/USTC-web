@@ -42,7 +42,8 @@ import {
   SelectPipelineTypeComponent,
   CheckPipelineSizeComponent,
   CheckPipelineMaterialComponent,
-  CheckPipelineAppendagesComponent
+  CheckPipelineAppendagesComponent,
+  CheckPipelineSizeRangeComponent
 } from './controls';
 import { ArkModule } from '../ark/ark.module';
 
@@ -101,6 +102,7 @@ const controls = [
   InputGroupComponent,
   SelectPipelineTypeComponent,
   CheckPipelineSizeComponent,
+  CheckPipelineSizeRangeComponent,
   CheckPipelineMaterialComponent,
   CheckPipelineAppendagesComponent
 ];

@@ -1,0 +1,45 @@
+<div class="group-check">
+  <div>
+    <label
+      nz-checkbox
+      [(ngModel)]="allChecked"
+      (ngModelChange)="updateAllChecked()"
+      [nzIndeterminate]="indeterminate"
+    >
+      全选
+    </label>
+  </div>
+  <!-- <nz-checkbox-group
+    [(ngModel)]="dataset"
+    (ngModelChange)="updateSingleChecked()"
+  ></nz-checkbox-group> -->
+  <nz-checkbox-wrapper style="width: 100%;" (nzOnChange)="updateSingleChecked()">
+    <div nz-row *ngFor="let item of dataset" class="ant-checkbox-group-item" style="width: 100%;">
+        <div nz-col nzSpan="16"><label nz-checkbox [nzValue]="item.value" [ngModel]="item.checked">
+          {{item.value[0]}}~{{item.value[1]}}
+        </label></div>
+        <div nz-col nzSpan="8" style="text-align: right;">
+          <button nz-button nzSize="small">
+            移除
+          </button>
+        </div>
+    </div>
+  </nz-checkbox-wrapper>
+  <div nz-row>
+    <div nz-col nzSpan="7">
+      <input nz-input placeholder="min" nzSize="small" />
+    </div>
+    <div nz-col nzSpan="2" class="vCenter">
+      ~
+    </div>
+    <div nz-col nzSpan="7">
+      <input nz-input placeholder="max" nzSize="small" />
+    </div>
+    <div nz-col nzSpan="8" style="text-align: right;">
+      <button nz-button nzType="primary" nzSize="small">
+        添加
+      </button>
+    </div>
+  </div>
+  
+</div>

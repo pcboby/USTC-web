@@ -1,1 +1,40 @@
 <app-group-help code="statistics-breaking"></app-group-help>
+
+<div class="table-operations">
+  <form nz-form [formGroup]="validateForm">
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">范围选择</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <nz-radio-group formControlName="ranges">
+          <label nz-radio [nzValue]="null">全选</label>
+          <label nz-radio [nzValue]="'CUSTOM'">自定义</label>
+        </nz-radio-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">管线图层</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <app-select-pipeline-type
+          formControlName="pipelineType"
+        ></app-select-pipeline-type>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-label [nzSm]="8" [nzXs]="24">尺寸范围</nz-form-label>
+        <nz-form-control [nzSm]="16" [nzXs]="24">
+          <app-check-pipeline-size-range></app-check-pipeline-size-range>
+        </nz-form-control>
+      </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control [nzSpan]="24" class="vCenter">
+        <button nz-button nzType="primary">
+          查询
+        </button>
+        <button nz-button>重置</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</div>
