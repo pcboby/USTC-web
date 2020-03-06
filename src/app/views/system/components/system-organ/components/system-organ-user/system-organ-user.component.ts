@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NzModalService, NzMessageService } from 'ng-zorro-antd';
 import { SystemOrganUserDetailComponent } from './components/system-organ-user-detail/system-organ-user-detail.component';
+import { SystemOrganUserEditComponent } from './components/system-organ-user-edit/system-organ-user-edit.component';
 
 @Component({
   selector: 'app-system-organ-user',
@@ -62,6 +63,40 @@ export class SystemOrganUserComponent implements OnInit {
       },
       nzWidth: 720,
       nzFooter: null
+    });
+  }
+
+  add() {
+    const modal = this.modal.create({
+      nzTitle: '新增',
+      nzContent: SystemOrganUserEditComponent,
+      nzComponentParams: {
+        // dataset: data
+      },
+      nzWidth: 720,
+      nzFooter: null
+    });
+  }
+
+  edit(data) {
+    const modal = this.modal.create({
+      nzTitle: '修改',
+      nzContent: SystemOrganUserEditComponent,
+      nzComponentParams: {
+        // dataset: data
+      },
+      nzWidth: 720,
+      nzFooter: null
+    });
+  }
+
+  del(ids) {
+    const modal = this.modal.confirm({
+      nzTitle: '提醒',
+      nzContent: '您确定【删除】吗？',
+      nzOnOk: () => {
+        console.log('OK', ids)
+      }
     });
   }
 }

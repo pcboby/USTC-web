@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArkMapService } from '../../services';
 
 @Component({
   selector: 'app-ark-map',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArkMapComponent implements OnInit {
 
-  constructor() { }
+  get roam() {
+    return this.map.ROAM;
+  }
+
+  constructor(private map: ArkMapService) { }
 
   ngOnInit() {
   }

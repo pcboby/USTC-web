@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../../services';
+import { ArkMapService } from 'src/app/ark/services';
 
 @Component({
   selector: 'app-menu-quick',
@@ -8,17 +9,28 @@ import { NavigationService } from '../../services';
 })
 export class MenuQuickComponent implements OnInit {
 
-  dataset = [{
-    title: '漫游',
-    iconCls: 'fa fa-paper-plane-o'
-  }, {
-    title: '清除',
-    iconCls: 'fa fa-trash-o'
-  }];
+  get roam() {
+    return this.map.ROAM;
+  }
+  set roam(val) {
+    this.map.ROAM = val;
+  }
 
-  constructor(private nav: NavigationService) { }
+  // dataset = [{
+  //   title: '漫游',
+  //   iconCls: 'fa fa-paper-plane-o'
+  // }, {
+  //   title: '清除',
+  //   iconCls: 'fa fa-trash-o'
+  // }];
+
+  constructor(private nav: NavigationService, private map: ArkMapService) { }
 
   ngOnInit() {
+  }
+
+  mapClear() {
+    this.map.clear();
   }
 
 }

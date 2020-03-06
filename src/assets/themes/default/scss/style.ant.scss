@@ -9,3 +9,23 @@
 .ant-alert{
     margin-bottom: 10px;
 }
+
+.ant-alert-close-icon{
+    top: 8px !important;
+    right: 16px !important;
+    .anticon{
+        color: rgba($color: #fff, $alpha: .85);
+    }
+    &:hover{
+        .anticon{
+            color: rgba($color: #00ffff, $alpha: .85);
+        }
+    }
+}
+
+.ant-modal-close{
+    color: rgba($color: #fff, $alpha: .85) !important;
+    &:hover{
+            color: rgba($color: #00ffff, $alpha: .85) !important;
+    }
+}

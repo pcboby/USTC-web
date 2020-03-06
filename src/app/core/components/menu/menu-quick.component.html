@@ -1,9 +1,15 @@
 <div class="menu-quick">
   <ul>
-    <li *ngFor="let item of dataset">
+    <li [ngClass]="{'selected': roam}" (click)="roam = !roam">
       <a>
-        <i [ngClass]="item.iconCls"></i>
-        <span>{{item.title}}</span>
+        <i class="fa fa-paper-plane-o"></i>
+        <span>漫游</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <i class="fa fa-trash-o"></i>
+        <span>清除</span>
       </a>
     </li>
   </ul>

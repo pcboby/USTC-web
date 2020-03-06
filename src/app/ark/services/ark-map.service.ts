@@ -1,10 +1,16 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ArkMapService {
+  ROAM = true;
 
-constructor() { }
+  constructor() {}
 
+  toggleRoam() {
+    this.ROAM = !this.ROAM;
+  }
+
+  clear() {}
 }
