@@ -11,6 +11,9 @@ export class ArkMapComponent implements OnInit {
   get roam() {
     return this.map.ROAM;
   }
+  get alpha() {
+    return this.map.ALPHA;
+  }
 
   constructor(private map: ArkMapService) { }
 

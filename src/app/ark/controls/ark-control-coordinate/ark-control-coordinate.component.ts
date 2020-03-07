@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArkMapService } from '../../services';
 
 @Component({
   selector: 'app-ark-control-coordinate',
@@ -7,11 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArkControlCoordinateComponent implements OnInit {
 
-  x = 0;
-  y = 0;
-  z = 0;
+  get x() {
+    return this.map.LOCALE[0] || 0;
+  }
+  get y() {
+    return this.map.LOCALE[1] || 0;
+  }
+  get z() {
+    return this.map.LOCALE[2] || 0;
+  }
 
-  constructor() { }
+  constructor(private map: ArkMapService) { }
 
   ngOnInit() {
   }

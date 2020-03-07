@@ -23,7 +23,7 @@ const controls = [
 const directives = [];
 const pipes = [];
 const services = [
-  ArkMapService
+  // ArkMapService
 ];
 const apis = [];
 
