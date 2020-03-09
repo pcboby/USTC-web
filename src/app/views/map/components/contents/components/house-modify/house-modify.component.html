@@ -1,1 +1,15 @@
 <app-group-help code="house-modify"></app-group-help>
+
+<div class="table-operations">
+    <form nz-form [formGroup]="validateForm">
+      <nz-form-item>
+        <nz-form-label [nzSm]="8" [nzXs]="24">已选建筑</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+            <input nz-input placeholder="选择建筑" />
+        </nz-form-control>
+     </nz-form-item>
+  
+    </form>
+  </div>
+
+  <nz-divider nzText="信息修改" nzOrientation="left"></nz-divider>
